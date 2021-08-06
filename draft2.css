@@ -164,6 +164,9 @@
     background-position: 0 0;
     width: auto;
   }
+  #logo {
+    max-width: 200px!important;
+  }
 }
 
 ul span i {
@@ -173,4 +176,20 @@ ul span i {
     content: "\f061";
     padding-left: 10px;
     font-size: larger;
+  }
+
+  #logo {
+    /* clear: both;
+    float: none; */
+    max-width: 380px;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: .5em auto;
+    margin-bottom: .5em auto;
+  }
+
+  .navbar {
+      background-color: #353535;
+      font-weight: 700!important;
+      font-size: 1.25rem;
   }
