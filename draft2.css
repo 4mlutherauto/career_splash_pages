@@ -31,6 +31,9 @@
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
   }
   .card aside {
     position: relative;
@@ -112,7 +115,7 @@
     width: 21px;
     height: 26px;
   }
-  @media only screen and (min-width: 450px) {
+  @media only screen and (min-width: 941px) {
     .card aside .button {
       background: #be1515;
       display: inline-block;
@@ -127,26 +130,32 @@
       text-decoration: none;
       color: white;
       font-weight: 600;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
     }
     .card aside .button .icon {
       vertical-align: middle;
     }
   }
-  @media only screen and (max-width: 449px) {
+  @media only screen and (max-width: 1490px) {
     .card aside .button {
-      background: #be1515;
-      display: inline-block;
-      position: absolute;
-      top: 76%;
-      right: 3%;
-      width: 9.0625em;
-      height: 4.375em;
-      border-radius: 0.625em;
-      line-height: 4.4em;
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
+        background: #be1515;
+        display: inline-block;
+        position: absolute;
+        top: 87%;
+        right: 3%;
+        width: 9.0625em;
+        height: 3.375em;
+        border-radius: 0.625em;
+        line-height: 3.65em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        /* box-shadow: 0 0 0 0 rgb(212 0 0); */
+        transform: scale(1);
+        animation: pulse 2s infinite;
     }
     .card aside .button .icon {
       vertical-align: middle;
@@ -166,6 +175,12 @@
   }
   #logo {
     max-width: 200px!important;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -193,3 +208,34 @@ ul span i {
       font-weight: 700!important;
       font-size: 1.25rem;
   }
+  container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  @media only screen and (min-width: 1500px) {
+      /* container {
+          display: flex;
+      } */
+      p {
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+      }
+  }
+
+  /* apply now button pulse */
+  /* @keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(201, 7, 7, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(219, 8, 8, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(189, 3, 3, 0);
+	}
+} */
