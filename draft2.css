@@ -16,12 +16,6 @@
     font-size: 1rem;
   }
   
-  img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
-  }
-  
   .card {
     background: #fff;
     margin: 4em auto;
@@ -39,6 +33,9 @@
     position: relative;
   }
   .card aside img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
@@ -216,7 +213,7 @@ ul span i {
       /* container {
           display: flex;
       } */
-      p {
+      .card p {
           padding-bottom: 1rem;
           padding-top: 1rem;
       }
